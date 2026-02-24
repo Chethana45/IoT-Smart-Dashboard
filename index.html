@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart IoT Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web1.css">
+</head>
+<body>
+
+<button class="toggle-mode" onclick="toggleMode()">Toggle Mode</button>
+
+<header>
+    <h1>⚡ Smart IoT Monitoring Dashboard</h1>
+    <p>Real-Time Environmental Analytics</p>
+</header>
+
+<div class="dashboard">
+
+    <div class="card">
+        <h3>🌡 Temperature</h3>
+        <div class="value" id="temp">-- °C</div>
+        <button onclick="refreshData()">Refresh</button>
+    </div>
+
+    <div class="card">
+        <h3>💧 Humidity</h3>
+        <div class="value" id="humidity">-- %</div>
+        <button onclick="refreshData()">Refresh</button>
+    </div>
+
+    <div class="card">
+        <h3>💡 Smart Light</h3>
+        <div class="value" id="lightStatus">OFF</div>
+        <button onclick="toggleLight()">Toggle</button>
+    </div>
+
+    <div class="card">
+        <h3>📊 Live Sensor Chart</h3>
+        <canvas id="chart"></canvas>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Advanced IoT System | Built by You
+</footer>
+
+<script src="web2.js"></script>
+</body>
+</html>
